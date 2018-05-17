@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Crayon 10</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!-- Animated Scroll  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 2000, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+        if (!document.location.hash) {
+            document.location.hash = 'home';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png" style="width:140px;"> </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PANDUAN</a></li>
+                    <li><a href="#">PENGUMUMAN</a></li>
+                    <li><a href="#">DOKUMENTASI</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#" class=" waves-effect waves-light btn deep-purple lighten-2">DAFTAR</a></li>
+                </ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> </div>
+        </nav>
+    </div>
+    <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PANDUAN</a></li>
+        <li><a href="#">PENGUMUMAN</a></li>
+        <li><a href="#">DOKUMENTASI</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#" class="waves-effect waves-light btn deep-purple lighten-2">DAFTAR</a></li>
+    </ul>
+    <!-- Tunggu Apa Lagi   -->
+    <div class="parallax-container valign-wrapper" id="tunggu">
+        <div class="section">
+            <div class="container">
+                <div class="row center">
+                    <h3 class="header col s12 light">Tunggu Apa Lagi?</h3>
+                    <h3>
+                    <a href="#" class="waves-effect waves-light btn deep-purple lighten-2">DAFTAR SEKARANG</a></h3>
+                    <h7> Contact Person : Anu (08888) Ini (989898)</h7>
+                    <h3>
+                    <div class="center sosial">
+                        <div class="social-wrapper">
+                            <a class="zmdi zmdi-facebook" href="#"></a>
+                        </div>
+                        <div class="social-wrapper">
+                            <a class="zmdi zmdi-twitter" href="#"></a>
+                        </div>
+                        <div class="social-wrapper">
+                            <a class="zmdi zmdi-instagram" href="#"></a>
+                        </div>
+                    </div>
+                    </h3>
+                    <h7>Sekretariat : Himpunan Mahasiswa Ilmu Komputer</h7>
+                    <h7>
+                    Gedung S1 Fakultas MIPA Universitas Gadjah Mada</h7>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="img/astro.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+    <!-- Sponsor   -->
+    <div id="sponsor">
+        <div class="container">
+            <h4 class="header judul light">Sponsor</h4> </div>
+    </div>
+    <!-- Galeri   -->
+    <div id="galeri">
+        <div class="container">
+            <h4 class="header judul light">Galeri Crayon 2016</h4>
+            </div>
+        <div class="carousel">
+            <a class="carousel-item"><img src="fotocrayon9/crayon1.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon2.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon3.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon4.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon5.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon6.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon7.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon8.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon9.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon10.jpg"></a>
+            <a class="carousel-item"><img src="fotocrayon9/crayon11.jpg"></a>
+        </div>
+    </div>
+    <!-- Timeline   -->
+    <div id="time">
+        <div class="container">
+            <h4 class="header judul light">Timeline</h4> </div>
+        <section class="timeline light">
+            <ol>
+                <li>
+                    <div>
+                        <strong>1 Januari 2017</strong><br>
+                        <strong>Pembukaan Pendaftaran Olnine</strong><br>
+                        Pendaftaran online dapat dilakukan pada website ini dengan mengunjungi link crayonugm.com/daftar, kemudian silakan mengikuti panduan pendaftaran online yang telah disediakan</div>
+                </li>
+                <li>
+                    <div>
+                        <strong>1 Januari 2017</strong><br>
+                        <strong>Pembukaan Pendaftaran Offline</strong><br> 
+                        Pendaftaran offline dapat dilakukan dengan mengunjungi selasar Gedung S1 FMIPA UGM dengan membawa biaya pendaftaran sebesar Rp 40.000.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>1 Januari 2017</strong><br>
+                        <strong>Roadshow</strong><br>
+                        Roadshow Crayon bertujuan untuk memperkenalkan aplikasi TuxPaint yang disediakan OS Linux kepada anak-anak seusia SD. Aplikasi TuxPaint sendiri merupakan aplikasi yang atraktif untuk anak-anak dengan usia SD dalam menghasilkan karya seni dalam bentuk gambar
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>1 Januari 2017</strong><br>
+                        <strong>Penutupan Pendaftaran</strong><br>
+                        Hari terakhir pendafaran secara offline dan online adalah pada tanggal ini
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>1 Januari 2017</strong><br>
+                        <strong>Technical Meeting</strong><br>
+                        Mengundang peserta/wali untuk menghadiri Tehnical Meeting (TM) Crayon 9. Di TM ini akan dijelaskan mengenai lomba menggmbar Crayon 9 beserta teknis-teknisnya. </div>
+                </li>
+                  <li>
+                    <div>
+                        <strong>1 Januari 2017</strong><br>
+                        <strong>Crayon 10</strong><br>
+                        Pelakasanaan lomba menggunakan menggunakan komputer Crayon 9. Bertempat di Exhibition Hall Taman Pintar Yogyakarta. </div>
+                </li>
+                <li></li>
+            </ol>
+        </section>
+    </div>
+    <!-- Video   -->
+    <div class="parallax-container valign-wrapper">
+        <div class="section">
+            <div class="container">
+                <div class="row center">
+                    <h3 class="header col s12 light">Lihat Video</h3> </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="img/planet12.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col l5 m6"> </div>
+                <div class="col l7 m6">
+                    <div class="valign-wrapper">
+                        <div>
+                            <p class="light"> Children at Technology Competition atau disingkat CRAYON adalah acara kompetisi di bidang teknologi komputer yang diadakan khusus untuk melatih keterampilan anak dalam dua bidang sekaligus, yaitu seni rupa dan pemanfaatan teknologi. CRAYON terdiri dari lomba menggambar dengan menggunakan komputer dan dikhususkan untuk anak-anak kelas satu hingga kelas enam sekolah dasar di DIY dan sekitarnya. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row about2">
+                <div class="col l5 m6 hide-on-med-and-up"> </div>
+                <div class="col l7 m6">
+                    <div class="valign-wrapper">
+                        <div>
+                            <p class="light"> Pada tahun 2017 ini CRAYON diadakan untuk yang ke-10 kalinya. CRAYON 2017 mengangkat tema "Into the Outer Space" yang akan mengasah keterampilan anak-anak dan mewadahi keinginan mereka untuk berekspresi. Disamping acara utama, ada acara tambahan (side event) yang rencananya akan mengajarkan perhitungan dan mengetik, serta virtual reality yang akan membawa anak untuk menjelajahi serta berinteraksi dengan lingkungan dunia maya </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Tema  -->
+    <div class="parallax-container valign-wrapper" id="tema">
+        <div class="section">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">Tema :</h5>
+                    <h3 class="header col s12 light">Into the Outer Space</h3> <a href="#about" class="waves-effect waves-light btn deep-purple lighten-2">Scroll Up</a> </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="img/planet7.png" alt="Unsplashed background img 2"></div>
+    </div>
+    <!-- Home   -->
+    <div id="home">
+        <div class="container" style="height: 100%">
+            <div class="section">
+                <div class="row"> <img class="logo" src="img/logo.png">
+                    <div class="col s12 center"> <a href="#tema" class="waves-effect waves-light btn deep-purple lighten-2">MELUNCUR</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>

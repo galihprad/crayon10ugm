@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Crayon 10</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!-- Animated Scroll  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png" style="width:140px;"> </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PANDUAN</a></li>
+                    <li><a href="#">PENGUMUMAN</a></li>
+                    <li><a href="#">DOKUMENTASI</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#" class=" waves-effect waves-light btn deep-purple lighten-2">DAFTAR</a></li>
+                </ul> <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> </div>
+        </nav>
+    </div>
+    <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PANDUAN</a></li>
+        <li><a href="#">PENGUMUMAN</a></li>
+        <li><a href="#">DOKUMENTASI</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#" class="waves-effect waves-light btn deep-purple lighten-2">DAFTAR</a></li>
+    </ul>
+       
+       <div class="daftar">
+       <div class="container">
+           <div class="section">
+       <h4 style="font-weight: 300">Form Pendaftaran</h4>
+       
+       <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col l6 m12 s12">
+          <input id="password" type="text" class="validate ">
+          <label for="nama">Nama</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l6 m12 s12">
+          <input id="email" type="text" class="validate">
+          <label for="umur">Umur</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col l6 m12 s12">
+          <input id="email" type="text" class="validate">
+          <label for="sekolah">Asal Sekolah</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col l6 m12 s12">
+          <input id="email" type="text" class="validate">
+          <label for="kelas">Kelas</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col l6 m12 s12">
+          <input id="email" type="text" class="validate">
+          <label for="nohp">No HP</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l6 m12 s12">
+          <input id="email" type="text" class="validate">
+          <label for="alamat">Alamat</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l6 m12 s12">
+          <input id="email" type="text" class="validate">
+          <label for="tahuacara">Tahu acara ini dari mana?</label>
+        </div>
+      </div>
+<input type="submit" id="register" value="Register" disabled="disabled" />
+    </form>
+  </div>
+            
+           </div>
+    </div>
+    </div>
+        <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        (function() {
+    $('form > input').keyup(function() {
+
+        var empty = false;
+        $('form > input').each(function() {
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('#register').attr('disabled', 'disabled');
+        } else {
+            $('#register').removeAttr('disabled');
+        }
+    });
+})
+    </script>
+</body>
+
+</html>

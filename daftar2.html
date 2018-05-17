@@ -1,0 +1,33 @@
+<form>
+    Username<br />
+    <input type="text" id="user_input" name="username" required/><br />
+    Password<br />
+    <input type="password" id="pass_input" name="password" required/><br />
+    Confirm Password<br />
+    <input type="password" id="v_pass_input" name="v_password" required/><br />
+    Email<br />
+    <input type="text" id="email" name="email" required/><br />     
+    <input type="submit" id="register" value="Register"/>
+</form>
+
+<div id="test"></div>
+<!--
+  <script>
+        (function() {
+    $('form > input').keyup(function() {
+
+        var empty = false;
+        $('form > input').each(function() {
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('#register').attr('disabled', 'disabled');
+        } else {
+            $('#register').removeAttr('disabled');
+        }
+    });
+})
+    </script>-->
